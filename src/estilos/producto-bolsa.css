@@ -1,0 +1,27 @@
+.imagen-producto-bolso{
+    border-top-left-radius:30% ;
+    border-bottom-left-radius: 30%;
+    width: 80px;
+    height: 80px;
+    font-family:greek;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.producto-bolso{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+
+}
+
+.info-producto-bolso{
+    padding: 10px;
+    width: 60%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(197, 188, 143);
+}

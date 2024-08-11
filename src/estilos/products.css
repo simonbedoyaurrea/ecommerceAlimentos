@@ -1,0 +1,120 @@
+.contenedor-producto{
+    display:flex;
+    flex-direction: column;
+    width:250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 3px rgba(63, 63, 63, 0.174);
+    
+
+}
+.imagen-producto{
+    width:100%;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 250px;
+    font-family: greek;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.269);
+}
+.imagen-producto-descuentos{
+    width:100%;
+    box-sizing: border-box;
+    background-color: rgb(231, 234, 148);
+    padding: 5px;
+    height: 250px;
+    font-family: greek;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.269);
+    
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+.info-producto{
+    text-align: center;
+    padding: 10px;
+    height: 119px;
+}
+
+.añadir-boton{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 120px;
+    padding: 7px;
+    background-color: transparent;
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+}
+.añadir-boton:hover{
+   scale: 0.9;
+   border-color:rgb(31,171,73) ;
+}
+
+.añadir-boton span{
+    position: relative;
+    z-index: 100;
+}
+
+.descuentos-titulo{
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(-250deg,rgb(139, 215, 139) 0%, rgb(63, 72, 207) 50%, rgb(128, 223, 73) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gtext 2.5s linear infinite;
+    background-size: 200% auto;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: greek;
+    margin-top: 80px;
+}
+.descuentos-parrafo{
+    margin: auto;
+    text-align: center;
+    color: black;
+    font-size: .8em;
+    
+}
+
+.boton-descuento{
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-image:linear-gradient(-250deg,rgb(47, 150, 47) 0%, rgb(99, 176, 92) 50%, rgb(47, 150, 47) 100%);
+    animation: gtext 5s linear infinite;
+    background-size: 200% auto;
+    color: rgb(236, 243, 237); 
+}
+
+.contenedor-botones-descuentos{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 40%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+

@@ -1,0 +1,88 @@
+.dropdown-alimentos-contenedor{
+    margin: auto;
+    width: 50%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.dropdown-alimentos-contenedor select{
+    background-color: rgb(243, 245, 195);
+    margin-top: 4px;
+    padding: 10px;
+    width: 200px;
+    font-family: greek;
+    border-radius: 10px;
+    position: relative;
+    left:-5px
+}
+
+.dropdown-alimentos-contenedor select option{
+    text-align: center;
+}
+
+
+.dropdown-alimentos-contenedor label{
+    margin-right: 10px;
+    font-size: 1.3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.contenedor-producto{
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 3px rgba(63, 63, 63, 0.174);
+
+}
+.imagen-producto{
+    width:100%;
+    box-sizing: border-box;
+    background-color: rgb(43, 66, 59);
+    padding: 5px;
+    height: 250px;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.contenedor-principal-descuentos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+    margin: auto;
+}
+.info-producto{
+    text-align: center;
+}
+
+.input-buscar{
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(91, 202, 137);
+    opacity: 1;
+    height: 35px;
+
+    &::placeholder{
+        color: white;
+    }
+}
+.input-buscar:focus{
+    outline: none;
+    border: none;
+}

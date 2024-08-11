@@ -1,0 +1,83 @@
+.descuento-25{
+    font-size: 80px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(-250deg,rgb(47, 150, 47) 0%, rgb(99, 176, 92) 50%, rgb(47, 150, 47) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gtext 2.5s linear infinite;
+    background-size: 200% auto;
+    position: relative;
+    top: -50px;
+    
+}
+.saa p{
+    position: relative;
+    top: -50px;
+    font-size: .8em;
+}
+
+img{
+    width: 700px;
+    
+}
+
+.primer-seccion{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -32px;
+
+}
+.compra-ahora{
+    border: rgb(29, 190, 29) solid 3px;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    background-color: transparent;
+    transition: all .2s linear;
+    position: relative;
+    overflow: hidden;
+}
+.compra-ahora::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-250deg,rgb(47, 150, 47) 0%, rgb(99, 176, 92) 50%, rgb(47, 150, 47) 100%);
+    position: absolute;
+    animation: gtext 2.5s linear infinite;
+    background-size: 200% auto;
+    left: -105%;
+    top: 0;
+    transition: left .4s ease-in-out;
+    z-index: 1;
+}
+.compra-ahora:hover{
+    scale: 1.2;
+    color:white;
+}
+.compra-ahora:hover::before{
+    left: 0;
+    transition: all .4s ease-in-out;
+}
+.compra-ahora span{
+    position: relative;
+    z-index: 100;
+    
+
+}
+.saa{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+@keyframes gtext{
+    to{
+        background-position: 200% center;
+    }
+}
