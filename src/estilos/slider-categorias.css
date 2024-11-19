@@ -1,0 +1,83 @@
+.slider-container{
+    width: 95%;
+    min-height: 250px;
+    overflow-x: scroll;
+    margin: 0 auto;
+    margin-bottom:50px
+}
+
+.categorias-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap:10px ;
+    animation: transform 35s linear infinite;
+
+
+    &:hover{
+        animation-play-state: paused;
+    }
+}
+
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    img{
+        width: 200px;
+        height: 200px;
+        border-top-right-radius:10px ;
+        border-top-left-radius: 10px;
+        background-color: rgb(243, 245, 195);
+    }
+
+    p{
+        border-bottom-right-radius:10px ;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(98, 184, 115);
+        padding: 10px;
+        color: black;
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+@keyframes transform {
+    0%{
+        transform:translateX(0)
+    }
+    100%{
+        transform:translateX(calc(-210px*10))
+    }
+}
+
+
+.slider-container{ 
+    --scrollbar-height: 4px;
+     --scrollbar-width: 0px;
+      --scrollbar-border-thickness: 0px;
+       --scrollbar-thumb-color: #4CAF50CC; } 
+
+.slider-container::-webkit-scrollbar { 
+    width: var(--scrollbar-width, 20px); 
+    height: var(--scrollbar-height, 20px); }
+    
+.slider-container::-webkit-scrollbar-thumb { 
+    background: var(--scrollbar-thumb-color, #3B82F6); 
+    border: var(--scrollbar-border-thickness, 7px) solid var(--scrollbar-border-color, rgb(255, 255, 255));
+     border-radius: var(--scrollbar-border-radius, 8px); }
+
+.slider-container::-webkit-scrollbar-track { 
+        background: var(--scrollbar-track-color, #A1A1AA); }
+        
+.slider-container::-webkit-scrollbar-corner {
+    background: var(--scrollbar-corner-color, #FFFFFF); 
+    border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255)); 
+    border-radius: var(--scrollbar-border-radius, 4px); }
+
+.slider-container::-webkit-scrollbar-button:vertical:start:increment, #preview::-webkit-scrollbar-button:vertical:end:decrement, #preview::-webkit-scrollbar-button:horizontal:start:increment, #preview::-webkit-scrollbar-button:horizontal:end:decrement
+ { display: var(--show-double-buttons, none); }

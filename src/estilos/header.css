@@ -13,6 +13,8 @@ z-index: 1;
     margin-bottom: 20px;
     overflow: hidden;
     height: 500px;
+    background-color: aqua;
+    box-sizing: border-box;
 }
 
 

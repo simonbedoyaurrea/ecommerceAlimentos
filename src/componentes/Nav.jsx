@@ -5,6 +5,8 @@ import { FiUser } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import BolsaDeCompras from './BolsaDeCompras'
+import { Link } from 'react-router-dom';
+
 
 const initialOptions = {
   clientId: 'AcdmDJDeqbL9MtmBHH8Va4UukHLSy4QDfO0DgJ2OYJ9JV1TFqFqkq5bZkM_3kI8xSFQz2u7iKltO8UTM', // Reemplaza con tu Client ID
@@ -12,19 +14,16 @@ const initialOptions = {
 };
 
 export default function Nav({bolsa,setBolsa,totalPagar,setTotalPagar}) {
- 
-      
+
       const[mostrarCompras,setMostrarCompras]=useState(false)
 
-   
     const mostrarBolsa=()=>{
     setMostrarCompras(!mostrarCompras)
     }
 
   return (<>
-    <nav >
+    <nav>
         <ul>
-            
             <li><a href="">PRODUCTOS</a>
             <ul className='dropdown-productos'>
               <li><a href="">FRUTAS</a></li>
@@ -35,13 +34,9 @@ export default function Nav({bolsa,setBolsa,totalPagar,setTotalPagar}) {
             </li>
             <li><a href="#descuento"><span className="descuentos">DESCUENTOS</span></a></li>
         </ul>
-        <div>FOOD</div>
+        <h1 className='titulo-food'><Link to="/">FOOD</Link></h1>
         <ul>
-          
-            <li className='buscar'><span className='lupa icono' ><BsSearch /></span>
-           
-            </li>
-            <li><a href=""><span className='usuario icono'><FiUser /></span></a></li>
+            <li><Link to="/login"><span className='usuario icono'><FiUser /></span></Link></li>
             <li><span className='bolsa icono' onClick={()=>mostrarBolsa()}><AiOutlineShopping /></span></li>
             {bolsa.length>0?<p className='numero-en-bolsa'>{bolsa.length}</p>:null}
         </ul>

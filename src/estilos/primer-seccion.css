@@ -29,6 +29,8 @@ img{
     justify-content: space-around;
     align-items: center;
     margin-bottom: -32px;
+    width:100%;
+    overflow: hidden;
 
 }
 .compra-ahora{

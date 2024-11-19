@@ -7,6 +7,9 @@ import Nav from './componentes/Nav'
 import PrimerSeccion from './componentes/PrimerSeccion'
 import Descuentos from './componentes/Descuentos'
 import SegundaSeccion from './componentes/SegundaSeccion'
+import InicioSesion from './componentes/inicioSesion'
+import SliderCategorias from './componentes/SliderCategorias'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 
@@ -20,27 +23,42 @@ function App() {
 
   return (
     <>
-      <Nav 
+      
+    <Router>
+    <Nav 
         bolsa={bolsa}
         setBolsa={setBolsa}
         totalPagar={totalPagar}
         setTotalPagar={setTotalPagar}
       />
-      <ImagenHeader />
-      <PrimerSeccion />
-      <Busqueda 
-        bolsa={bolsa}
-        setBolsa={setBolsa}
-        totalPagar={totalPagar}
-        setTotalPagar={setTotalPagar}
-      />
-      <Descuentos
-        bolsa={bolsa} 
-        setBolsa={setBolsa}
-        totalPagar={totalPagar}
-        setTotalPagar={setTotalPagar}
-      />
-      <SegundaSeccion />
+      <Routes>
+          <Route 
+          path="/" 
+          element={
+          <>
+          <ImagenHeader />
+          <PrimerSeccion />
+          <Busqueda 
+          bolsa={bolsa}
+          setBolsa={setBolsa}
+          totalPagar={totalPagar}
+          setTotalPagar={setTotalPagar}
+          />
+          <SegundaSeccion />
+          </>}>
+        </Route>
+        <Route path="/descuentos" element={
+          <Descuentos
+            bolsa={bolsa} 
+            setBolsa={setBolsa}
+            totalPagar={totalPagar}
+            setTotalPagar={setTotalPagar}
+            />}>
+        </Route>
+        <Route path="/login" element={<InicioSesion />}>
+        </Route>
+      </Routes>
+    </Router>
 
       </>
     
