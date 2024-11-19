@@ -1,0 +1,52 @@
+[
+    {
+        "nombre": "Todo",
+        "categoria": "Todo",
+        "imagen": "https://cosechasunicas.com/wp-content/uploads/2023/09/pngegg-3.png"
+    },
+    {
+        "nombre": "Frutas",
+        "categoria": "Frutas",
+        "imagen": "https://static.vecteezy.com/system/resources/thumbnails/020/899/515/small/red-apple-isolated-on-white-png.png"
+    },
+    {
+        "nombre": "Verduras",
+        "categoria": "Verduras",
+        "imagen": "https://static.vecteezy.com/system/resources/previews/027/216/344/original/onion-onion-transparent-background-ai-generated-free-png.png"
+    },
+    {
+        "nombre": "Dulces",
+        "categoria": "Dulces",
+        "imagen": "https://static.vecteezy.com/system/resources/previews/028/332/207/non_2x/sweets-candies-and-treats-ai-generative-free-png.png"
+    },
+    {
+        "nombre": "Carnes",
+        "categoria": "Carnes",
+        "imagen": "https://static.vecteezy.com/system/resources/previews/028/332/216/non_2x/fresh-raw-beef-meat-ai-generative-free-png.png"
+    },
+    {
+        "nombre": "Frutos secos",
+        "categoria": "Frutos Secos",
+        "imagen": "https://static.vecteezy.com/system/resources/previews/012/596/342/non_2x/group-of-almond-nuts-concept-free-png.png"
+    },
+    {
+        "nombre": "Aceites",
+        "categoria": "Aceites",
+        "imagen": "https://png.pngtree.com/png-clipart/20240309/original/pngtree-bottle-of-vegetable-oil-png-image_14548258.png"
+    },
+    {
+        "nombre": "Salsas",
+        "categoria": "Salsas",
+        "imagen": "https://goodmorningvietnam.shop/shop/55-large_default/salsa-sriracha-al-peperoncino-piccante-sriracha-hot-chilli-sauce-tuong-ot-sriracha-200ml.jpg"
+    },
+    {
+        "nombre": "Cereales",
+        "categoria": "Cereales",
+        "imagen": "https://superlavioleta.com/cdn/shop/files/avena_granel.png?v=1719498688"
+    },
+    {
+        "nombre": "Lácteos",
+        "categoria": "Lácteos",
+        "imagen": "https://static.vecteezy.com/system/resources/thumbnails/019/550/837/small/milk-bottle-mockup-on-transparent-background-file-png.png"
+    }
+]

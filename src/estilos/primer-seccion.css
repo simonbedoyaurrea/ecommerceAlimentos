@@ -1,5 +1,5 @@
 .descuento-25{
-    font-size: 80px;
+    font-size: 4.5em;
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: linear-gradient(-250deg,rgb(47, 150, 47) 0%, rgb(99, 176, 92) 50%, rgb(47, 150, 47) 100%);
@@ -9,30 +9,35 @@
     animation: gtext 2.5s linear infinite;
     background-size: 200% auto;
     position: relative;
-    top: -50px;
-    
 }
-.saa p{
+.text-container-ps p{
     position: relative;
-    top: -50px;
     font-size: .8em;
+    padding: 10px 0px 6px 0px;
+}
+.text-container-ps{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
-img{
-    width: 700px;
-    
+.imagen-ps{
+    max-width: 60%;             
+    height: 60%;                
+    object-fit: cover; 
 }
 
 .primer-seccion{
-    height: 100vh;
+    width:100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: -32px;
-    width:100%;
-    overflow: hidden;
-
+    margin-bottom: -10px;  
+    overflow-x: hidden;
+    flex-wrap: wrap;
 }
+
 .compra-ahora{
     border: rgb(29, 190, 29) solid 3px;
     border-radius: 5px;
@@ -71,12 +76,7 @@ img{
     
 
 }
-.saa{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
+
 
 @keyframes gtext{
     to{

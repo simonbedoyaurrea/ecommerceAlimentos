@@ -16,7 +16,7 @@ object-fit: cover;
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
-    height: 500px;
+    height: 85vh;
     background-color: rgb(47, 101, 216);
     box-sizing: border-box;
 }
