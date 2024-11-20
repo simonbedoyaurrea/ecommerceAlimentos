@@ -123,23 +123,23 @@
         height: 260px;
     }
     .info-producto{
-        font-size: 15px;
+        font-size: 11px;
     }
     .añadir-boton{
         width: 90%;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     .contenedor-producto{
         width:110px;
         height: 190px;
     }
     .info-producto{
-        font-size: 9px;
+        font-size: 8px;
     }
     .añadir-boton{
-        font-size: 9px;
+        font-size: 7px;
         padding: 5px;
         width: 90%;
     }
