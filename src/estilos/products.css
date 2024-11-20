@@ -6,14 +6,13 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 3px 3px rgba(63, 63, 63, 0.174);
-    
-
 }
+
 .imagen-producto{
     width:100%;
     box-sizing: border-box;
     padding: 5px;
-    height: 250px;
+    height: 60%;
     font-family: greek;
     display: flex;
     justify-content: center;
@@ -21,6 +20,7 @@
     font-size: 30px;
     color: rgba(0, 0, 0, 0.269);
 }
+
 .imagen-producto-descuentos{
     width:100%;
     box-sizing: border-box;
@@ -33,7 +33,6 @@
     align-items: center;
     font-size: 30px;
     color: rgba(0, 0, 0, 0.269);
-    
 }
 
 .contenedor-principal{
@@ -48,20 +47,20 @@
 .info-producto{
     text-align: center;
     padding: 10px;
-    height: 119px;
+    height: 40%;
 }
 
 .añadir-boton{
     border: 1px solid black;
     border-radius: 8px;
-    width: 120px;
-    padding: 7px;
+    width: 50%;
+    padding: 8px;
     background-color: transparent;
     transition: all .2s linear;
     position: relative;
     overflow: hidden;
     margin-top: 5px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 .añadir-boton:hover{
@@ -118,3 +117,30 @@
 }
 
 
+@media (max-width: 539px) {
+    .contenedor-producto{
+        width:180px;
+        height: 260px;
+    }
+    .info-producto{
+        font-size: 15px;
+    }
+    .añadir-boton{
+        width: 90%;
+    }
+}
+
+@media (max-width: 380px) {
+    .contenedor-producto{
+        width:110px;
+        height: 190px;
+    }
+    .info-producto{
+        font-size: 9px;
+    }
+    .añadir-boton{
+        font-size: 9px;
+        padding: 5px;
+        width: 90%;
+    }
+}

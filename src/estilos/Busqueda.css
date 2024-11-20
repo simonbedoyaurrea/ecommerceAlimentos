@@ -8,27 +8,6 @@
     align-items: center;
     gap: 10px;
 }
-.dropdown-alimentos-contenedor select{
-    background-color: rgb(243, 245, 195);
-    margin-top: 4px;
-    padding: 10px;
-    width: 200px;
-    font-family: greek;
-    border-radius: 10px;
-    position: relative;
-    left:-5px
-}
-
-.dropdown-alimentos-contenedor select option{
-    text-align: center;
-}
-
-
-.dropdown-alimentos-contenedor label{
-    margin-right: 10px;
-    font-size: 1.3em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
 
 .contenedor-producto{
@@ -39,8 +18,8 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 3px 3px rgba(63, 63, 63, 0.174);
+} 
 
-}
 .imagen-producto{
     width:100%;
     box-sizing: border-box;

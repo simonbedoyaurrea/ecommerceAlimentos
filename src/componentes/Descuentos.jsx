@@ -30,7 +30,6 @@ const filtrarDescuento=(porcentaje)=>{
       
         productos.filter(el=>descuento==0?el.descuento>0:el.descuento==descuento).map(producto=>
             <ProductsDescuento producto={producto} bolsa={bolsa} setBolsa={setBolsa} totalPagar={totalPagar} setTotalPagar={setTotalPagar} />
-
         )
 
     }

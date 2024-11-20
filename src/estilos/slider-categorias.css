@@ -88,7 +88,7 @@
     width: 95%;
     min-height: 250px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .categoria {
@@ -102,7 +102,7 @@
     
 
     img{
-        width: 80%;
+        width: 70%;
         height: 200px;
         border-top-right-radius:10px ;
         border-top-left-radius: 10px;
@@ -115,24 +115,36 @@
         background-color: rgb(98, 184, 115);
         padding: 10px;
         color: black;
-        width: 80%;
+        width: 70%;
         text-align: center;
-
+        height: 50px;
     }
 }
 
-.custom-prev{
-    color: green;
+.swiper-button-prev,
+.swiper-button-next {
+    color: #ff0080 !important; /* Cambia a tu color preferido */
 }
 
-
-/* .categoria img {
-    width: 100%;
-    max-height: 100px;
-    object-fit: contain;
+/* Opcional: Cambiar color al pasar el mouse */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #10824b; /* Cambia el color al hacer hover */
 }
 
-.categoria p {
-    margin-top: 10px;
-    font-size: 14px;
-} */
+.swiper{
+    height: 280px;
+}
+
+.swiper-pagination {
+    bottom: 10px  !important; /* Ajusta este valor para moverlos más abajo */
+}
+
+.swiper-pagination-bullet {
+    background-color: #2f9c46 !important; /* Cambia el color de los puntos */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4cafad !important; /* Cambia el color del punto activo */
+}
+
